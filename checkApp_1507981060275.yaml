@@ -1,0 +1,45 @@
+info:
+  title: checkApp
+  version: 10.0.0
+  x-lastModified: Oct 14, 2017 04:36AM PST
+paths:
+  /wallet:
+    get:
+      operationId: getWallet
+      parameters:
+      - default: 123
+        description: walletid
+        format: int32
+        in: query
+        name: id
+        required: false
+        type: integer
+      - description: ""
+        format: ""
+        in: query
+        name: name
+        required: false
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    post:
+      operationId: postWallet
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+  /wow:
+    get:
+      operationId: getWow
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+swagger: "2.0"
